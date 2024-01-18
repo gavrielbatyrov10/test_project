@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header {
+    flex: 1;
+}
+
 
 /* top nav start */
 
@@ -13,7 +17,7 @@ li {
 
 }
 
-a {
+.nav__anchor {
     text-decoration: none;
     border-right: 1px solid grey;
     padding-right: 10px;
@@ -52,9 +56,11 @@ input[type="search"] {
     margin: 30px;
     min-width: 70%;
     height: 1.7rem;
-    border-bottom: 1px solid #4444bb;
     display: flex;
     justify-content: flex-end;
+    border: none;
+    border-bottom: 1px solid #4444bb;
+    padding: 4px;
 }
 
 
@@ -79,4 +85,104 @@ input[type="button"] {
     margin: 0 auto;
     text-align: center;
     font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.side__nav--wrapper {
+    background-color: rgba(216, 214, 214, 0.472);
+    display: flex;
+    ;
+}
+
+/* side nav start */
+
+
+.side__nav {
+    display: flex;
+    padding: 1em;
+}
+
+.side__anchor {
+    background-color: #4444bb;
+    padding: 16px;
+    color: white;
+    width: 12rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side__anchor:hover {
+    background-color: #292979;
+}
+
+.side__link {
+    display: flex;
+}
+
+/* main start */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem 0;
+    box-shadow: 0 3px 5px -2px black;
+    width: 100px;
+    /*this Sets a width for each product card */
+}
+
+@media (max-width:700px) {
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 1rem 0;
+        box-shadow: 0 3px 5px -2px black;
+        width: 200px;
+    }
+}
+
+.wide {
+    width: 330px;
+    height: 200px;
+}
+
+@media (max-width:700px) {
+
+    .product-card {
+
+        width: 330px;
+        height: 200px;
+
+    }
+}
+
+.product-title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #4444bb;
+    text-align: center;
+}
+
+.card__footer {
+    background-color: #4444bb;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+/* footer start */
+
+footer {
+    background-color: #4444bb;
 }
