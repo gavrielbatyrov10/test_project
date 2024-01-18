@@ -111,6 +111,7 @@ input[type="button"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .side__anchor:hover {
