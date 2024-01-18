@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-header {
-    flex: 1;
-}
+
+
 
 
 /* top nav start */
@@ -46,8 +45,6 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-
-
 }
 
 
@@ -129,12 +126,15 @@ main {
     justify-content: center;
 }
 
+
+
 .product-card {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem 1rem 0;
+    margin: 2ch;
     box-shadow: 0 3px 5px -2px black;
-    width: 100px;
+    width: 15ch;
+    text-align: center;
     /*this Sets a width for each product card */
 }
 
@@ -148,10 +148,7 @@ main {
     }
 }
 
-.wide {
-    width: 330px;
-    height: 200px;
-}
+
 
 @media (max-width:700px) {
 
@@ -179,7 +176,9 @@ main {
 }
 
 img {
-    border-bottom: 1px solid rgb(170, 170, 170);
+    width: 10ch;
+    /* padding-bottom: ; */
+    height: 3rem;
 }
 
 /* footer start */
